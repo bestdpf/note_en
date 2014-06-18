@@ -25,6 +25,7 @@
 \usepackage{multicol}        % used for the two-column index
 \usepackage[bottom]{footmisc}% places footnotes at page bottom
 
+\usepackage{comment}
 % see the list of further useful packages
 % in the Reference Guide
 
@@ -36,31 +37,33 @@
 
 \begin{document}
 
-\author{Author name(s)}
-\title{Book title}
-\subtitle{-- Monograph --}
+\author{Pengfei Tuan}
+\title{System as Engineering}
+\subtitle{Private notes of a programmer}
 \maketitle
 
 \frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \include{dedic}
-\include{foreword}
-\include{preface}
-\include{acknow}
+%\include{foreword}
+%\include{preface}
+%\include{acknow}
 
 \tableofcontents
 
-\include{acronym}
+%\include{acronym}
 
 
 \mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{part}
-\include{chapter}
-\include{appendix}
+\include{part1}
+\include{chapter1}
+\include{part2}
+\include{chapter2}
+%\include{appendix}
 
 \backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{glossary}
-\include{solutions}
+%\include{glossary}
+%\include{solutions}
 \printindex
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
