@@ -1,0 +1,63 @@
+%%%%%%%%%%%%%%%%%%%%% chapter.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample chapter
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%%%%%%%%%% Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+%\motto{Use the template \emph{chapter.tex} to style the various elements of your chapter content.}
+
+\chapter{Structure and Interpretation of Computer Programs}
+\label{intro} % Always give a unique label
+% use \chaptermark{}
+% to alter or adjust the chapter heading in the running head
+
+\abstract{The first English CS book I read, and I should read more in the future.}
+
+\section{CH1 Building Abstractions with Procedures}
+\label{sec:1}
+
+Lisp is inefficient.
+
+Procedures are also data in lisp.
+
+read-eval-print loop
+
+normal-order evaluation vs. applicative-order evaluation. They may give different results. normal-order runs by need, applicative-order always runs.
+
+\textcolor{red}{ex-1.6 is good, self define functions use applicative order(ie. combination uses applicative order, not normal order)}
+
+non-strict or strict in argument. cons is an example of non-strict: not know the parameter before enter the procedure.
+
+bound value is the value's meaning unchanged, like parameters, unbound value is not, like functions it refers to, because the function may change in different scoping, though the book doesn't explain like this.
+
+lexical scoping means define funcs in func.
+
+In page 42, the author says that Ada-like language consumes an amount of memory that grows with the number of procedure calls, I don't think it is right, even in that time.
+
+syntactic sugar, is proxy of some mechanism in programming language.
+
+\textcolor{red}{I skip form money change example to 1.3 Formulating Abstractions with Higher-Order Procedures. I should read them later. Just skip and skip has nothing gain.}
+
+\emph{Procedures as args or return val, higher-order procedures}
+
+definite integral of f between the limits a and b:
+\begin{equation}
+\int_a^b f(x)dx=[f(a+\frac{dx}{2})+f(a+dx+\frac{dx}{2})+f(a+2dx+\frac{dx}{2})+\dots]dx
+\end{equation}
+
+and Simpson's Rule is more accurate.
+\begin{equation}
+\frac{h}{3}[y_0+4y_1+2y_2+4y_3+2y_4+\dots+2y_{n-2}+4y_{n-1}+y_{n}]
+\end{equation}
+
+h=(b-a)/h, $y_k=f(a+kh)$
+
+\textcolor{red}{skip ex-1.31 to ex-1.33}
+
+lambda anonymous function, can also be used as a operator.
+
+
+
+
+
